@@ -1,0 +1,170 @@
+.tab-position {
+    margin-bottom: 24px;
+}
+
+.tab-position .tab {
+    border-width: 2px !important;
+    padding-bottom: 8px !important;
+    padding-top: 11px !important;
+    padding-left: 8px !important;
+}
+
+.tab-position .tab:not(.tab-in-accordion) {
+    margin-top: 5px !important;
+}
+
+.tab-position .tab.tab-in-accordion.tab-first-in-group {
+    border-top: 2px solid var(--colorHighlightBg) !important;
+    border-radius: calc(var(--radius)) !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    margin-top: 5px !important;
+    border-bottom: 0 !important;
+}
+
+.tab-position .tab.tab-in-accordion.tab-last-in-group {
+    border-bottom: 2px solid var(--colorHighlightBg) !important;
+    border-radius: calc(var(--radius)) !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top: 0 !important;
+}
+
+.tab-position .tab.tab-in-accordion {
+    border-left: 2px solid var(--colorHighlightBg) !important;
+    border-right: 2px solid var(--colorHighlightBg) !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.tab-position .tab.tab-accordion {
+    border: 2px solid var(--colorHighlightBg) !important;
+}
+
+.tab-position .tab.active {
+    border-width: 2px !important;
+    box-shadow: 0px 0px 0px transparent !important;
+}
+
+.tab-position .tab.unread {
+    background-image: linear-gradient(-135deg, var(--colorAccentFgAlpha) 5px, transparent 5px) !important;
+}
+
+.tab-position.accordion-toggle-arrow {
+    margin-bottom: 3px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.tab-position.accordion-toggle-arrow .VivaldiSvgIcon {
+    color: var(--colorHighlightBg);
+    margin-top: -1px;
+}
+
+.tabs-left #main {
+    margin-left: 0px;
+}
+
+#tabs-container.left:hover,
+#tabs-container.right:hover {
+    background-color: var(--colorAccentBgDarker);
+    height: calc(100% - 56px);
+    top: 34px;
+    padding-top: 0px;
+}
+
+#tabs-container.left:not(:hover),
+#tabs-container.right:not(:hover) {
+    height: calc(100% - 56px);
+    width: 58px !important;
+    background-color: var(--colorAccentBgDarker);
+    top: 34px;
+    padding-top: 0px;
+}
+
+.button-toolbar.newtab {
+    border-top: 0px;
+}
+
+.resize > .tab-strip > .toolbar-tabbar {
+    background: var(--colorAccentBgDarker);
+}
+
+.resize > .tab-strip > .separator {
+    --PositionX: -10px !important;
+    --PositionY: 5px !important;
+}
+
+.resize > .tab-strip > .separator + span > .tab-position {
+    margin-top: 32px;
+}
+
+.resize > .tab-strip > .separator > hr {
+    background-color: var(--colorAccentFg);
+    border: 0px;
+    height: 4px;
+    margin-top: 0px;
+    width: 91%;
+}
+
+#tabs-container > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
+    justify-content: flex-start;
+    margin-left: 1px;
+}
+
+#tabs-container:hover > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
+    margin-left: 1px;
+}
+
+.tab-audio {
+    transform: scale(0.6) !important;
+    bottom: 0px;
+    border-radius: var(--radiusRound);
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+}
+
+.audioicon {
+    filter: brightness(0) saturate(100%);
+}
+
+.svg-tab-stack .stack-frame {
+    stroke: transparent !important;
+}
+
+.accordion-toggle-arrow.closed.active {
+    background-color: inherit;
+    fill: var(--colorFg);
+}
+
+#webview-container {
+    margin-left: 50px;
+}
+
+#browser.fullscreen #webview-container {
+    margin-left: 0px;
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar {
+    width: 10px;
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: var(--colorAccentBg);
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar-button {
+    height: 10px;
+    visibility: collapse;
+}
