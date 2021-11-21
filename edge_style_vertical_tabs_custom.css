@@ -9,6 +9,12 @@
     padding-left: 8px !important;
 }
 
+.tab-position .tab.active {
+    border-width: 2px !important;
+    border-color: transparent !important;
+    box-shadow: 0px 0px 0px transparent !important;
+}
+
 .tab-position .tab:not(.tab-in-accordion) {
     margin-top: 5px !important;
 }
@@ -45,11 +51,6 @@
     border: 2px solid var(--colorHighlightBg) !important;
 }
 
-.tab-position .tab.active {
-    border-width: 2px !important;
-    box-shadow: 0px 0px 0px transparent !important;
-}
-
 .tab-position .tab.unread {
     background-image: linear-gradient(-135deg, var(--colorAccentFgAlpha) 5px, transparent 5px) !important;
 }
@@ -63,6 +64,10 @@
 .tab-position.accordion-toggle-arrow .VivaldiSvgIcon {
     color: var(--colorHighlightBg);
     margin-top: -1px;
+}
+
+.tab.pinned:hover > .tab-header > .favicon > img {
+    margin-left: 1px;
 }
 
 .tabs-left #main {
@@ -120,11 +125,15 @@
 
 #tabs-container > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
     justify-content: flex-start;
-    margin-left: 1px;
+    margin-left: 5px;
 }
 
 #tabs-container:hover > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
-    margin-left: 1px;
+    margin-left: 5px;
+}
+
+#tabs-container:hover .toolbar-tabbar .newtab > button::after {
+    padding-left: 1px;
 }
 
 .tab-audio {
