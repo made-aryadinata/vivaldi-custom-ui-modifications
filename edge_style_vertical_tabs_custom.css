@@ -108,6 +108,13 @@
     border: 0px;
     height: 4px;
     margin-top: 0px;
+}
+
+#tabs-container:not(:hover) > .resize > .tab-strip > .separator > hr {
+    width: 60%;
+}
+
+#tabs-container:hover > .resize > .tab-strip > .separator > hr {
     width: 91%;
 }
 
