@@ -140,7 +140,7 @@
 
 .accordion-toggle-arrow.closed.active {
     background-color: inherit;
-    fill: var(--colorFg);
+    fill: var(--colorHighlightBg);
 }
 
 #webview-container {
