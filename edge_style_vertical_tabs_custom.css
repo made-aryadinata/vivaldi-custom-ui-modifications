@@ -15,6 +15,12 @@
     box-shadow: 0px 0px 0px transparent !important;
 }
 
+.tab-position .tab .svg-tab-selection {
+    margin-top: -11px;
+    margin-left: -8px
+;
+}
+
 .tab-position .tab:not(.tab-in-accordion) {
     margin-top: 5px !important;
 }
@@ -76,7 +82,7 @@
 
 #tabs-container.left:hover,
 #tabs-container.right:hover {
-    background-color: var(--colorAccentBgDarker);
+    background-color: var(--colorAccentBg);
     height: calc(100% - 56px);
     top: 34px;
     padding-top: 0px;
@@ -86,7 +92,7 @@
 #tabs-container.right:not(:hover) {
     height: calc(100% - 56px);
     width: 58px !important;
-    background-color: var(--colorAccentBgDarker);
+    background-color: var(--colorAccentBg);
     top: 34px;
     padding-top: 0px;
 }
@@ -96,7 +102,7 @@
 }
 
 .resize > .tab-strip > .toolbar-tabbar {
-    background: var(--colorAccentBgDarker);
+    background: var(--colorAccentBg);
 }
 
 .resize > .tab-strip > .separator {
@@ -141,6 +147,21 @@
     bottom: 0px;
     border-radius: var(--radiusRound);
     background-color: #fff;
+    comment: "#8ca6a6";
+    text: "#004d57";
+    keyword: "#ff5792";
+    variable: "#fa8900";
+    annotation: "#b3694d";
+    constant: "#a88c00";
+    tag: "#e64100";
+    string: "#00b368";
+    stringInterpolated: "#009456";
+    number: "#5842ff";
+    function: "#0095a8";
+    support: "#00bdd6";
+    misc: "#0094f0";
+    invalid: "#ff530f";
+    a: "#bbc3c4";
     height: 20px;
     width: 20px;
     padding: 2px;
