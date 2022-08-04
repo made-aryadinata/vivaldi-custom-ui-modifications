@@ -1,9 +1,10 @@
-/* Hide title bar and header */
-
+/* Remove header */
 #header {
-  display: none !important;
+  min-height: 0;
+  z-index: auto;
 }
 
-#titlebar {
-  display: none !important;
+/* Keep Window buttons */
+.window-buttongroup {
+  z-index: 999;
 }

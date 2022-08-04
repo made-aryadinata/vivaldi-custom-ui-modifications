@@ -198,8 +198,8 @@
     fill: var(--colorHighlightBg);
 }
 
-#webview-container {
-    margin-left: 50px;
+.inner > div:nth-child(2) {
+    width: 58px !important
 }
 
 #browser.fullscreen #webview-container {
@@ -222,4 +222,8 @@
 #tabs-container .tab-strip::-webkit-scrollbar-button {
     height: 10px;
     visibility: collapse;
+}
+
+.toggle-trash {
+    padding-right: 6px;
 }
