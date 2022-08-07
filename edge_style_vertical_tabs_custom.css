@@ -198,8 +198,16 @@
     fill: var(--colorHighlightBg);
 }
 
-.inner > div:nth-child(2) {
+.maximized .inner > div:nth-child(2) {
     width: 58px !important
+}
+
+.normal .inner > div:nth-child(2) {
+    width: 58px !important
+}
+
+.UrlBar-PrivateWindowIndicator {
+    padding: 0 90px 0 6px
 }
 
 #browser.fullscreen #webview-container {
