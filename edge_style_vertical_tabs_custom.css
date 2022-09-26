@@ -207,7 +207,8 @@
 }
 
 .UrlBar-PrivateWindowIndicator {
-    padding: 0 90px 0 6px
+    padding: 0 90px 0 6px;
+    color: transparent;
 }
 
 #browser.fullscreen #webview-container {
