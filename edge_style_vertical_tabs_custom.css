@@ -78,13 +78,6 @@
     border-bottom: 0 !important;
 }
 
-#tabs-container.left:not(:hover), #tabs-container.right:not(:hover) {
-    transition-property: width;
-    transition-delay: 0.10s;
-    transition-duration: 0.50s;
-    transition-timing-function: ease-in-out;
-}
-
 .tab-position .tab.tab-accordion {
     border: 2px solid var(--colorHighlightBg) !important;
 }
@@ -112,6 +105,10 @@
     margin-left: 0px;
 }
 
+#tabs-container {
+    border-color: var(--colorAccentBgDark) !important;
+}
+
 #tabs-container.left:hover,
 #tabs-container.right:hover {
     background-color: var(--colorAccentBg);
@@ -129,6 +126,10 @@
     background-color: var(--colorAccentBg);
     top: 46px;
     padding-top: 0px;
+    transition-property: width;
+    transition-delay: 0.10s;
+    transition-duration: 0.50s;
+    transition-timing-function: ease-in-out;
 }
 
 .button-toolbar.newtab {
@@ -167,13 +168,13 @@
     display: flex;
 }
 
+.toolbar-tabbar > .button-toolbar > button {
+    width: 30px;
+}
+
 #tabs-container:not(:hover) > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
     justify-content: flex-start;
     margin-left: 37px;
-}
-
-.toolbar-tabbar .newtab > button {
-    width: 30px;
 }
 
 #tabs-container:hover > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
@@ -184,8 +185,6 @@
 #tabs-container:hover .toolbar-tabbar .newtab > button::after {
     padding-left: 1px;
     color: var(--colorImageFg, var(--colorAccentFg));
-    transition-property: color;
-    transition-duration: 0s;
     transition-delay: 0.05s;
 }
 
@@ -201,18 +200,29 @@
     padding-left: 0px;
 }
 
-#tabs-container .sync-and-trash-container .synced-tabs-button span::after {
-    content: "Sync";
-    margin-top: 0px;
-    width: 100%;
-    display: inline-block;
-    margin-top: 7px;
-    padding-left: 1px;
-    cursor: pointer;
+#tabs-container .sync-and-trash-container .toggle-trash button span {
+    margin-left: 41px;
 }
 
-#tabs-container .sync-and-trash-container .toggle-trash button span::after {
+#tabs-container .sync-and-trash-container .synced-tabs-button button span {
+    margin-left: 37px;
+}
+
+#tabs-container .sync-and-trash-container .toggle-trash button::after {
     content: "Trash";
+}
+
+#tabs-container .sync-and-trash-container .synced-tabs-button button::after {
+    content: "Sync";
+}
+
+#tabs-container:hover .sync-and-trash-container .synced-tabs-button span::after,
+#tabs-container:hover .sync-and-trash-container .toggle-trash button span::after {
+    display: none;
+}
+
+#tabs-container .sync-and-trash-container .toggle-trash button::after,
+#tabs-container .sync-and-trash-container .synced-tabs-button button::after {
     display: inline-block;
     margin-top: 0px;
     padding-left: 1px;
@@ -223,13 +233,21 @@
     transition-delay: 0.35s;
 }
 
-#tabs-container:hover .sync-and-trash-container .toggle-trash button span::after {
+#tabs-container:hover .sync-and-trash-container .toggle-trash button::after,
+#tabs-container:hover .sync-and-trash-container .synced-tabs-button button::after {
     margin-top: 0px;
     padding-left: 1px;
     color: var(--colorImageFg, var(--colorAccentFg));
     transition-property: color;
     transition-duration: 0.1s;
     transition-delay: 0.10s;
+}
+
+.toggle-trash,
+.sync-and-trash-container {
+    display: block;
+    width: 100%;
+    margin-bottom: -2px;
 }
 
 .tab-audio {
