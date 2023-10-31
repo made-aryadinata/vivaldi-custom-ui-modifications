@@ -1,5 +1,6 @@
 .tab-position {
     margin-bottom: 24px;
+    --Width: 224px !important;
 }
 
 .tab-position .tab {
@@ -10,19 +11,25 @@
 }
 
 .tab-position .tab.active {
+    background-color: var(--colorBgDarker) !important;
     border-width: 2px !important;
     border-color: transparent !important;
     box-shadow: 0px 0px 0px transparent !important;
 }
 
+.tab-position .tab:hover {
+    background: var(--colorBgLighter) !important;
+}
+
 .tab-position .tab .svg-tab-selection {
-    margin-top: -11px;
+    margin-top: 0px;
     margin-left: -8px;
 }
 
 .tab-position .tab .svg-tab-selection.svg-tab-stack {
-    margin-top: -11px;
-    margin-left: -8px;
+    margin-top: -10px;
+    margin-left: -6px;
+    width: calc(100% - 3px);
 }
 
 .tab-position .tab .svg-tab-selection.svg-tab-stack .inner {
@@ -71,6 +78,13 @@
     border-bottom: 0 !important;
 }
 
+#tabs-container.left:not(:hover), #tabs-container.right:not(:hover) {
+    transition-property: width;
+    transition-delay: 0.10s;
+    transition-duration: 0.50s;
+    transition-timing-function: ease-in-out;
+}
+
 .tab-position .tab.tab-accordion {
     border: 2px solid var(--colorHighlightBg) !important;
 }
@@ -101,17 +115,19 @@
 #tabs-container.left:hover,
 #tabs-container.right:hover {
     background-color: var(--colorAccentBg);
-    height: calc(100% - 56px);
-    top: 34px;
+    height: calc(100% - 73px);
+    top: 46px;
     padding-top: 0px;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
 }
 
 #tabs-container.left:not(:hover),
 #tabs-container.right:not(:hover) {
-    height: calc(100% - 56px);
+    height: calc(100% - 73px);
     width: 58px !important;
     background-color: var(--colorAccentBg);
-    top: 34px;
+    top: 46px;
     padding-top: 0px;
 }
 
@@ -147,17 +163,73 @@
     width: 91%;
 }
 
-#tabs-container > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
+#tabs-container > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button {
+    display: flex;
+}
+
+#tabs-container:not(:hover) > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
     justify-content: flex-start;
-    margin-left: 5px;
+    margin-left: 37px;
+}
+
+.toolbar-tabbar .newtab > button {
+    width: 30px;
 }
 
 #tabs-container:hover > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
-    margin-left: 5px;
+    margin-left: 37px;
+    padding-left: 2px;
 }
 
 #tabs-container:hover .toolbar-tabbar .newtab > button::after {
     padding-left: 1px;
+    color: var(--colorImageFg, var(--colorAccentFg));
+    transition-property: color;
+    transition-duration: 0s;
+    transition-delay: 0.05s;
+}
+
+#tabs-container .toolbar-tabbar .newtab > button::after {
+    content: "New Tab";
+    width: 100%;
+    color: transparent;
+    transition-property: color;
+    transition-duration: 0s;
+    transition-delay: 0.45s;
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+#tabs-container .sync-and-trash-container .synced-tabs-button span::after {
+    content: "Sync";
+    margin-top: 0px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 7px;
+    padding-left: 1px;
+    cursor: pointer;
+}
+
+#tabs-container .sync-and-trash-container .toggle-trash button span::after {
+    content: "Trash";
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 1px;
+    cursor: pointer;
+    color: transparent;
+    transition-property: color;
+    transition-duration: 0.1s;
+    transition-delay: 0.35s;
+}
+
+#tabs-container:hover .sync-and-trash-container .toggle-trash button span::after {
+    margin-top: 0px;
+    padding-left: 1px;
+    color: var(--colorImageFg, var(--colorAccentFg));
+    transition-property: color;
+    transition-duration: 0.1s;
+    transition-delay: 0.10s;
 }
 
 .tab-audio {
@@ -231,8 +303,4 @@
 #tabs-container .tab-strip::-webkit-scrollbar-button {
     height: 10px;
     visibility: collapse;
-}
-
-.toggle-trash {
-    padding-right: 6px;
 }

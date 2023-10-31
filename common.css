@@ -8,3 +8,8 @@
 .window-buttongroup {
   z-index: 999;
 }
+
+.topmenu {
+  visibility: hidden;
+  height: 0px;
+}
