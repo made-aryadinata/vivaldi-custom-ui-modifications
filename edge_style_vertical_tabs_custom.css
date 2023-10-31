@@ -111,7 +111,8 @@
 
 #tabs-container.left:hover,
 #tabs-container.right:hover {
-    background-color: var(--colorAccentBg);
+    background-color: color-mix(in srgb, var(--colorAccentBg) 70%, transparent);
+    backdrop-filter: blur(20px);
     height: calc(100% - 73px);
     top: 46px;
     padding-top: 0px;
@@ -123,7 +124,8 @@
 #tabs-container.right:not(:hover) {
     height: calc(100% - 73px);
     width: 58px !important;
-    background-color: var(--colorAccentBg);
+    background-color: color-mix(in srgb, var(--colorAccentBg) 70%, transparent);
+    backdrop-filter: blur(20px);
     top: 46px;
     padding-top: 0px;
     transition-property: width;
@@ -137,7 +139,7 @@
 }
 
 .resize > .tab-strip > .toolbar-tabbar {
-    background: var(--colorAccentBg);
+    background-color: transparent;
 }
 
 .resize > .tab-strip > .separator {
