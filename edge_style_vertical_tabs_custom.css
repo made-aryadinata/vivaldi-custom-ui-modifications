@@ -195,7 +195,7 @@
     width: 100%;
     color: transparent;
     transition-property: color;
-    transition-duration: 0s;
+    transition-duration: 0.1s;
     transition-delay: 0.45s;
     display: inline-block;
     margin-top: 0px;
@@ -232,7 +232,7 @@
     color: transparent;
     transition-property: color;
     transition-duration: 0.1s;
-    transition-delay: 0.35s;
+    transition-delay: 0.45s;
 }
 
 #tabs-container:hover .sync-and-trash-container .toggle-trash button::after,
