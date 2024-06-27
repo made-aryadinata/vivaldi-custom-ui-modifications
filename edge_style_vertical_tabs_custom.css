@@ -13,11 +13,11 @@
     padding-top: 11px !important;
     padding-left: 8px !important;
     transition-duration: 0.2s;
-    transition-property: background-color;
+    transition-property: background;
 }
 
 .tab-position .tab.active {
-    background-color: var(--colorAccentBgAlpha) !important;
+    background-color: var(--colorAccentBgDarker) !important;
     border-width: 2px !important;
     border-color: transparent !important;
     box-shadow: 0px 0px 0px transparent !important;
@@ -117,26 +117,30 @@
 
 #main #tabs-container.left,
 #main #tabs-container.right {
-    background-color: color-mix(in srgb, var(--colorBg) 88%, transparent);
+    background-color: color-mix(in srgb, var(--colorBg) 87%, transparent);
     backdrop-filter: blur(20px);
-    box-shadow: 0px 5px 10px var(--colorBgDarker) !important;
-    height: calc(100% - 73px);
-    top: 46px;
+    box-shadow: 2px 0px 6px -2px rgba(0, 0, 0, 0.6) !important;
+    height: calc(100% - 85px);
+    top: 52px;
+    left: -57px;
     padding-top: 0px;
-    transition-delay: 0.1s;
+    border-radius: 10px;
 }
 
-#tabs-container.left:hover,
-#tabs-container.right:hover {
-    transition-duration: 0.1s;
+#main #tabs-container.left:hover,
+#main #tabs-container.right:hover {
+    left: 0px;
+    transition:
+        left  0.1s ease-in-out 0.1s,
+        width 0.1s ease-in-out 0.6s;
 }
 
 #tabs-container.left:not(:hover),
 #tabs-container.right:not(:hover) {
     width: 58px !important;
-    transition-property: width;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
+    transition:
+        width 0.5s ease-in-out 0.1s,
+        left  0.5s ease-in-out 1.5s;
 }
 
 .button-toolbar.newtab {
@@ -196,7 +200,7 @@
 #tabs-container:hover .toolbar-tabbar .newtab > button::after {
     padding-left: 1px;
     color: var(--colorImageFg, var(--colorFgIntense));
-    transition-delay: 0.05s;
+    transition-delay: 0.65s;
 }
 
 #tabs-container .toolbar-tabbar .newtab > button::after {
@@ -255,7 +259,7 @@
     color: var(--colorImageFg, var(--colorFgIntense));
     transition-property: color;
     transition-duration: 0.1s;
-    transition-delay: 0.10s;
+    transition-delay: 0.70s;
 }
 
 .toggle-trash,
@@ -304,11 +308,11 @@
 }
 
 .maximized .inner > div:nth-child(2) {
-    width: 58px !important
+    width: 0px !important
 }
 
 .normal .inner > div:nth-child(2) {
-    width: 58px !important
+    width: 0px !important
 }
 
 .UrlBar-PrivateWindowIndicator {
@@ -336,4 +340,8 @@
 #tabs-container .tab-strip::-webkit-scrollbar-button {
     height: 10px;
     visibility: collapse;
+}
+
+div#vivaldi-tooltip {
+    margin-left: 10000px !important;
 }
