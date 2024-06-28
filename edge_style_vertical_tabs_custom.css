@@ -9,6 +9,10 @@
     width: 240px !important;
 }
 
+.tab-position.is-pinned {
+    margin-left: 0px;
+}
+
 .tab-position .tab {
     border-width: 2px !important;
     padding-bottom: 8px !important;
@@ -106,6 +110,7 @@
     margin-bottom: 3px;
     margin-left: 7px;
     margin-top: 0px;
+    grid-column: 1/-1;
 }
 
 .tab-position.accordion-toggle-arrow .VivaldiSvgIcon {
@@ -169,13 +174,13 @@
 }
 
 .resize > .tab-strip > .toolbar-tabbar {
-    grid-column: span 5;
+    grid-column: 1/-1;
     background-color: transparent;
 }
 
 .resize > .tab-strip > .separator {
     height: 9px;
-    grid-column: span 5;
+    grid-column: 1/-1;
     --PositionY: 5px !important;
     position: relative;
 }
@@ -183,9 +188,10 @@
 .resize > .tab-strip > .separator > hr {
     background-color: var(--colorFg);
     border: 0px;
-    height: 4px;
+    height: 2px;
     margin-top: 0px;
     margin-bottom: 0px;
+    width: calc(100% - 6px * 2);
 }
 
 #tabs-container > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button {
@@ -328,7 +334,7 @@
 }
 
 .tab-strip>span:has(.tab-position:not(.is-pinned)) {
-    grid-column: span 5;
+    grid-column: 1/-1;
     display: flex;
 }
 
@@ -338,7 +344,6 @@
     grid-auto-rows: max-content;
     padding: 0px !important;
     padding-top: 10px !important;
-    overflow-x: hidden;
 }
 
 #tabs-container .tab-strip::-webkit-scrollbar {
