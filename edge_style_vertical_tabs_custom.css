@@ -3,21 +3,30 @@
 }
 
 .tab-position {
-    margin-bottom: 24px;
-    --Width: 224px !important;
+    margin-bottom: 0px;
+    margin-left: 6px;
+    --Width: 235px !important;
+    width: 231px !important;
 }
 
 .tab-position .tab {
     border-width: 2px !important;
     padding-bottom: 8px !important;
+    padding-right: 0px !important;
     padding-top: 11px !important;
     padding-left: 8px !important;
     transition-duration: 0.2s;
     transition-property: background;
+    margin-bottom: 0px !important;
+}
+
+.tab-position .tab .title {
+    width: 149px;
 }
 
 .tab-position .tab.active {
-    background-color: var(--colorAccentBgDarker) !important;
+    background-color: var(--colorAccentBg) !important;
+    color: var(--colorBgDarker) !important;
     border-width: 2px !important;
     border-color: transparent !important;
     box-shadow: 0px 0px 0px transparent !important;
@@ -25,6 +34,7 @@
 
 .tab-position .tab:hover {
     background: var(--colorBgLighter) !important;
+    color: var(--colorFg) !important;
 }
 
 .tab-position .tab .svg-tab-selection {
@@ -94,13 +104,17 @@
 
 .tab-position.accordion-toggle-arrow {
     margin-bottom: 3px;
-    margin-left: 0px;
+    margin-left: 7px;
     margin-top: 0px;
 }
 
 .tab-position.accordion-toggle-arrow .VivaldiSvgIcon {
     color: var(--colorHighlightBg);
     margin-top: -1px;
+}
+
+#browser:not(.alt-tabs) #tabs-container .close {
+    margin-right: 2px !important;
 }
 
 .tab.pinned:hover > .tab-header > .favicon > img {
@@ -151,12 +165,9 @@
 }
 
 .resize > .tab-strip > .separator {
-    --PositionX: -10px !important;
+    height: 9px;
     --PositionY: 5px !important;
-}
-
-.resize > .tab-strip > .separator + span > .tab-position {
-    margin-top: 32px;
+    position: relative;
 }
 
 .resize > .tab-strip > .separator > hr {
@@ -164,6 +175,7 @@
     border: 0px;
     height: 4px;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #tabs-container > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button {
@@ -302,6 +314,13 @@
 
 #browser.fullscreen #webview-container {
     margin-left: 0px;
+}
+
+#tabs-container .tab-strip {
+    display: grid;
+    grid-auto-rows: max-content;
+    padding: 0px !important;
+    padding-top: 10px !important;
 }
 
 #tabs-container .tab-strip::-webkit-scrollbar {
