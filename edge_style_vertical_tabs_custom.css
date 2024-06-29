@@ -19,7 +19,7 @@
     padding-right: 0px !important;
     padding-top: 11px !important;
     padding-left: 8px !important;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     transition-property: background;
     margin-bottom: 0px !important;
 }
@@ -116,6 +116,14 @@
 .tab-position.accordion-toggle-arrow .VivaldiSvgIcon {
     color: var(--colorHighlightBg);
     margin-top: -1px;
+}
+
+.tab-position > .tab.isdiscarded {
+    filter: brightness(1) contrast(1) opacity(1);
+}
+
+.tab-position > .tab.isdiscarded > .tab-header {
+    filter: brightness(.8) contrast(.8) opacity(0.65);
 }
 
 #browser:not(.alt-tabs) #tabs-container .close {
