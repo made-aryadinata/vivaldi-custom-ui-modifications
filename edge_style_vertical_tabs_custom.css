@@ -30,6 +30,14 @@
     box-shadow: 0px 0px 0px transparent !important;
 }
 
+.tab-position .tab.active button.close svg {
+    color: var(--colorFgIntense) !important;
+}
+
+.tab-position .tab.active:hover button.close svg {
+    color: var(--colorFg) !important;
+}
+
 .tab-position .tab:hover {
     background: var(--colorBgLighter) !important;
     color: var(--colorFg) !important;
@@ -110,12 +118,25 @@
     margin-top: -1px;
 }
 
+.tab-position.accordion-toggle-arrow.closed.active {
+    background-color: inherit;
+    fill: var(--colorHighlightBg);
+}
+
 .tab-position > .tab.isdiscarded {
     filter: brightness(1) contrast(1) opacity(1);
 }
 
 .tab-position > .tab.isdiscarded > .tab-header {
     filter: brightness(.8) contrast(.8) opacity(0.65);
+}
+
+.color-behind-tabs-on .tab-position .tab {
+    color: var(--colorFgFadedMore);
+}
+
+.color-behind-tabs-on .tab-position.is-pinned .tab {
+    margin: 5px 2px 0px 2px !important;
 }
 
 #browser:not(.alt-tabs) #tabs-container .close {
@@ -130,8 +151,8 @@
     margin-left: 1px;
 }
 
-.tab.pinned> .tab-header > .favicon {
-    margin-left: 5px;
+.tab.pinned > .tab-header > .favicon {
+    margin-left: 3px;
 }
 
 .tabs-left #main {
@@ -166,6 +187,36 @@
 #tabs-container.right:not(:hover) {
     transition:
         left  0.15s ease-in 0.2s;
+}
+
+#tabs-container .tab-strip > span:has(.tab-position:not(.is-pinned)) {
+    grid-column: 1/-1;
+    display: flex;
+}
+
+#tabs-container .tab-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+    grid-auto-rows: max-content;
+    padding: 10px 6px 0px 6px !important;
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar {
+    width: 10px;
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: var(--colorBg);
+}
+
+#tabs-container .tab-strip::-webkit-scrollbar-button {
+    height: 10px;
+    visibility: collapse;
 }
 
 .button-toolbar.newtab {
@@ -210,12 +261,8 @@
     display: none;
 }
 
-#tabs-container .sync-and-trash-container .toggle-trash button span {
-    margin-left: 41px;
-}
-
-#tabs-container .sync-and-trash-container .synced-tabs-button button span {
-    margin-left: 37px;
+#tabs-container .sync-and-trash-container button span {
+    margin-left: 30px;
 }
 
 #tabs-container .sync-and-trash-container .toggle-trash button::after {
@@ -226,21 +273,26 @@
     content: "Sync";
 }
 
-#tabs-container:hover .sync-and-trash-container .synced-tabs-button span::after,
-#tabs-container:hover .sync-and-trash-container .toggle-trash button span::after {
-    display: none;
+#tabs-container .sync-and-trash-container button span::after {
+    display: none !important;
 }
 
-#tabs-container .sync-and-trash-container .toggle-trash button::after,
-#tabs-container .sync-and-trash-container .synced-tabs-button button::after {
+#tabs-container .sync-and-trash-container button span svg {
+    height: 22px;
+    width: 22px;
+}
+
+#tabs-container .sync-and-trash-container button::after {
     display: inline-block;
     margin-top: 0px;
     padding-left: 1px;
     cursor: pointer;
 }
 
-.color-behind-tabs-on .tab-position .tab {
-    color: var(--colorFgFadedMore);
+#tabs-container .sync-and-trash-container {
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-top: 0px !important;
 }
 
 #tabs-container:hover .sync-and-trash-container .toggle-trash button::after,
@@ -290,11 +342,6 @@
     stroke: transparent !important;
 }
 
-.accordion-toggle-arrow.closed.active {
-    background-color: inherit;
-    fill: var(--colorHighlightBg);
-}
-
 .maximized .inner > div:nth-child(2) {
     width: 0px !important
 }
@@ -310,36 +357,6 @@
 
 #browser.fullscreen #webview-container {
     margin-left: 0px;
-}
-
-.tab-strip>span:has(.tab-position:not(.is-pinned)) {
-    grid-column: 1/-1;
-    display: flex;
-}
-
-#tabs-container .tab-strip {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
-    grid-auto-rows: max-content;
-    padding: 10px 6px 0px 6px !important;
-}
-
-#tabs-container .tab-strip::-webkit-scrollbar {
-    width: 10px;
-}
-
-#tabs-container .tab-strip::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-#tabs-container .tab-strip::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background-color: var(--colorBg);
-}
-
-#tabs-container .tab-strip::-webkit-scrollbar-button {
-    height: 10px;
-    visibility: collapse;
 }
 
 div#vivaldi-tooltip {
