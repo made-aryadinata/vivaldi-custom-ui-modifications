@@ -210,33 +210,12 @@
     width: 30px;
 }
 
-#tabs-container:not(:hover) > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
-    justify-content: flex-start;
-    margin-left: 6px;
-    padding-left: 2px;
-}
-
-#tabs-container:hover > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button > span {
-    margin-left: 6px;
-    padding-left: 2px;
-}
-
 .color-behind-tabs-on .toolbar-tabbar > .button-toolbar > button, .color-behind-tabs-on .toolbar-tabbar > .toolbar-group > .button-toolbar > button {
     color: var(--colorImageFg, var(--colorFgIntense));
 }
 
 #tabs-container:hover .toolbar-tabbar .newtab > button::after {
-    color: var(--colorImageFg, var(--colorFgIntense));
-    padding-left: 1px;
-}
-
-#tabs-container .toolbar-tabbar .newtab > button::after {
-    content: "New Tab";
-    color: var(--colorImageFg, var(--colorFgIntense));
-    width: 100%;
-    display: inline-block;
-    margin-top: 0px;
-    padding-left: 1px;
+    display: none;
 }
 
 #tabs-container .sync-and-trash-container .toggle-trash button span {
