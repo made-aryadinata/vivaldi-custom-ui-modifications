@@ -4,9 +4,6 @@
 
 .tab-position {
     margin-bottom: 0px;
-    margin-left: 3px;
-    --Width: 244px !important;
-    width: 240px !important;
 }
 
 .tab-position.is-pinned {
@@ -15,10 +12,7 @@
 
 .tab-position .tab {
     border-width: 2px !important;
-    padding-bottom: 8px !important;
-    padding-right: 0px !important;
-    padding-top: 11px !important;
-    padding-left: 8px !important;
+    padding: 10px 4px 10px 8px !important;
     transition-duration: 0.1s;
     transition-property: background;
     margin-bottom: 0px !important;
@@ -107,9 +101,7 @@
 }
 
 .tab-position.accordion-toggle-arrow {
-    margin-bottom: 3px;
-    margin-left: 7px;
-    margin-top: 0px;
+    margin: 0px 0px 3px 0px;
     grid-column: 1/-1;
 }
 
@@ -139,7 +131,7 @@
 }
 
 .tab.pinned> .tab-header > .favicon {
-    margin-left: 3px;
+    margin-left: 5px;
 }
 
 .tabs-left #main {
@@ -191,15 +183,15 @@
     grid-column: 1/-1;
     --PositionY: 5px !important;
     position: relative;
+    width: 100%;
 }
 
 .resize > .tab-strip > .separator > hr {
     background-color: var(--colorFg);
     border: 0px;
     height: 2px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: calc(100% - 6px * 2);
+    margin: 0px;
+    width: 100%;
 }
 
 #tabs-container > .resize > .tab-strip > .toolbar.toolbar-tabbar.toolbar-large.tab-position > .button-toolbar > button {
@@ -329,8 +321,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
     grid-auto-rows: max-content;
-    padding: 0px !important;
-    padding-top: 10px !important;
+    padding: 10px 6px 0px 6px !important;
 }
 
 #tabs-container .tab-strip::-webkit-scrollbar {
