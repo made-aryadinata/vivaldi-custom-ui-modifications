@@ -1,6 +1,5 @@
 .tab-position.accordion-toggle-arrow .VivaldiSvgIcon {
   color: var(--colorHighlightBg);
-  margin-top: 7px;
 }
 
 .tab-position .tab.tab-in-accordion.tab-first-in-group {
@@ -8,7 +7,6 @@
   border-radius: calc(var(--radius)) !important;
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
-  margin-top: 5px !important;
   border-bottom: 0 !important;
 }
 
@@ -32,12 +30,23 @@
   border-bottom: 0 !important;
 }
 
-.accordion-toggle-arrow {
+.tab-position:has(.tab.tab-in-accordion) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tab-position:has(.tab.tab-in-accordion.tab-first-in-group) {
+  margin-top: 2px;
+}
+
+.tab-position.accordion-toggle-arrow {
   width: 238px;
+  margin-left: 0;
+  margin-top: -1px;
 }
 
 .accordion-toggle-arrow.closed.active {
-  margin: 0px 0px 3px 0px;
+  margin: -1px 0px 3px 0px;
   background-color: transparent;
 }
 

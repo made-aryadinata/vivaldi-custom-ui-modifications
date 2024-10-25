@@ -2,8 +2,14 @@
   margin: 0;
 }
 
+.tab-wrapper {
+  max-height: 45px;
+}
+
 .tab-position {
   height: 45px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   align-items: center;
 }
 

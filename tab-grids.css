@@ -8,7 +8,6 @@
   grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
   grid-auto-rows: max-content;
   padding: 10px 6px 0px 6px !important;
-  row-gap: 5px;
   column-gap: 4px;
 }
 
@@ -29,7 +28,7 @@
 .tab-strip > .separator {
   grid-column: 1/-1;
   --PositionY: 5px !important;
-  height: 0px;
+  height: 10px;
   position: relative;
   width: 238px;
 }
