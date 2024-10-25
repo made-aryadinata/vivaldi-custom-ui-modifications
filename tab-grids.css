@@ -30,8 +30,17 @@
 .tab-strip > .separator {
   grid-column: 1/-1;
   --PositionY: 5px !important;
+  height: 0px;
   position: relative;
   width: 238px;
+}
+
+.tab-strip > .separator > hr {
+  background-color: var(--colorFg);
+  border: 0px;
+  height: 2px;
+  margin: 0px;
+  width: 100%;
 }
 
 .tab.pinned .title {
