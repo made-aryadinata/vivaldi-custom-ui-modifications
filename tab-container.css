@@ -6,7 +6,7 @@
   z-index: 9999999;
   position: fixed;
   width: 250px !important;
-  height: calc(100% - 82px) !important;
+  height: calc(100% - 28px - var(--densityGap) * 2 - 46px - 2px) !important;
   color: var(--colorFg) !important;
 }
 
