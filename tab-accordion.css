@@ -57,3 +57,15 @@
 .svg-tab-stack {
   display: none
 }
+
+.tabs-left .tab-accordion.active, .tabs-left .tab-in-accordion.tab-first-in-group,
+.tabs-right .tab-accordion.active, .tabs-right .tab-in-accordion.tab-first-in-group {
+  border-bottom-right-radius: var(--currentRadius);
+  border-bottom-left-radius: var(--currentRadius);
+}
+
+.tabs-left .tab-accordion, .tabs-left .tab-in-accordion.tab-first-in-group:hover,
+.tabs-right .tab-accordion, .tabs-right .tab-in-accordion.tab-first-in-group:hover {
+  border-bottom-right-radius: var(--currentRadius);
+  border-bottom-left-radius: var(--currentRadius);
+}
