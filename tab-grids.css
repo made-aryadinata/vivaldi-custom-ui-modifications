@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
   grid-auto-rows: max-content;
-  padding: 10px 6px 0px 6px !important;
+  padding: 10px var(--TabSideMargin) 0px var(--TabSideMargin) !important;
   column-gap: 4px;
 }
 
@@ -30,7 +30,7 @@
   --PositionY: 5px !important;
   height: 10px;
   position: relative;
-  width: 238px;
+  width: var(--TabWidth)px;
 }
 
 .tab-strip > .separator > hr {

@@ -9,5 +9,5 @@
 
 #vivaldi-tooltip .tab-solo {
   position: fixed;
-  left: 253px;
+  left: calc(var(--TabBarWidth) + 3px);
 }

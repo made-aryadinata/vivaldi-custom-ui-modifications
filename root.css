@@ -1,0 +1,6 @@
+:root {
+  --TabBarWidth: 250px;
+  --TabSideMargin: 6px;
+  --TabHeight: 40px;
+  --TabWidth: calc(var(--TabBarWidth) - 2 * var(--TabSideMargin));
+}

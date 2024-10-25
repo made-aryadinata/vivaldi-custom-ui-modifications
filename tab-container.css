@@ -5,7 +5,7 @@
 #tabs-tabbar-container.left {
   z-index: 9999999;
   position: fixed;
-  width: 250px !important;
+  width: var(--TabBarWidth) !important;
   height: calc(100% - 28px - var(--densityGap) * 2 - 46px - 2px) !important;
   color: var(--colorFg) !important;
 }
@@ -19,7 +19,7 @@
 }
 
 #tabs-tabbar-container.left:not(:hover) {
-  left: -243px;
+  left: calc(7px - var(--TabBarWidth));
   opacity: 0;
   transition:
       left    0.15s ease-in 0.2s,

@@ -1,15 +1,12 @@
-.density-on .tab-wrapper {
+.tab-position > .tab-wrapper {
   margin: 0;
-}
-
-.tab-wrapper {
-  max-height: 45px;
+  max-height: var(--TabHeight);
 }
 
 .tab-position {
-  height: 45px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  height: var(--TabHeight);
+  margin-top: calc(var(--TabSideMargin) / 2);
+  margin-bottom: calc(var(--TabSideMargin) / 2);
   align-items: center;
 }
 
@@ -19,7 +16,7 @@
   transition:
     background 0.1s,
     color      0.1s;
-  height: 45px;
+  height: var(--TabHeight);
   justify-content: center;
 }
 
@@ -34,7 +31,7 @@
 }
 
 .tab-position .tab .tab-header {
-  max-width: 238px !important;
+  max-width: var(--TabWidth)px !important;
 }
 
 .tab-position .tab.pinned .tab-header {
