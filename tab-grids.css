@@ -18,7 +18,6 @@
 }
 
 .tab-position.accordion-toggle-arrow {
-  margin: 0px 0px 3px 0px;
   grid-column: 1/-1;
 }
 
