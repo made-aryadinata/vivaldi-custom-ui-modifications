@@ -1,8 +1,18 @@
+.density-on .tab-wrapper {
+  margin: 0;
+}
+
+.tab-position {
+  height: 45px;
+  align-items: center;
+}
+
 .tab-position .tab {
   background-color: rgba(0, 0, 0, 0) !important;
   color: var(--colorFgFadedMore) !important;
-  transition-duration: 0.1s;
-  transition-property: background;
+  transition:
+    background 0.1s,
+    color      0.1s;
   height: 40px;
   justify-content: center;
 }
@@ -17,20 +27,11 @@
   color: var(--colorFg) !important;
 }
 
-.density-on .tab-wrapper {
-  margin: 0;
-}
-
-.tab-position {
-  height: 45px;
-  align-items: center;
-}
-
-.tab .tab-header {
+.tab-position .tab .tab-header {
   max-width: 238px !important;
 }
 
-.tab.pinned .tab-header {
+.tab-position .tab.pinned .tab-header {
   justify-content: center;
   padding-left: 0px;
 }

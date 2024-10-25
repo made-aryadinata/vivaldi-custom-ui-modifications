@@ -35,6 +35,6 @@
   display: none;
 }
 
-.color-behind-tabs-on .tab-position.is-pinned .tab {
+.tab-position.is-pinned .tab {
   margin: 5px 2px 0px 2px !important;
 }
