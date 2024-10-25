@@ -1,0 +1,36 @@
+.tab-position .tab {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: var(--colorFgFadedMore) !important;
+  transition-duration: 0.1s;
+  transition-property: background;
+  height: 40px;
+  justify-content: center;
+}
+
+.tab-position .tab.active {
+  background: var(--colorAccentBgDarker) !important;
+  color: var(--colorFgIntense) !important;
+}
+
+.tab-position .tab:hover {
+  background: var(--colorBgLightIntense) !important;
+  color: var(--colorFg) !important;
+}
+
+.density-on .tab-wrapper {
+  margin: 0;
+}
+
+.tab-position {
+  height: 45px;
+  align-items: center;
+}
+
+.tab .tab-header {
+  max-width: 238px !important;
+}
+
+.tab.pinned .tab-header {
+  justify-content: center;
+  padding-left: 0px;
+}

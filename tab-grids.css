@@ -1,0 +1,40 @@
+.tab-position {
+  position: relative !important;
+  transform: none !important;
+}
+
+.tab-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(42px, 1fr));
+  grid-auto-rows: max-content;
+  padding: 10px 6px 0px 6px !important;
+}
+
+.tab-strip > span:has(.tab-position:not(.is-pinned)) {
+  grid-column: 1/-1;
+  display: flex;
+}
+
+.tab-position.accordion-toggle-arrow {
+  margin: 0px 0px 3px 0px;
+  grid-column: 1/-1;
+}
+
+.tab-strip > .toolbar-tabbar {
+  grid-column: 1/-1;
+  background-color: transparent;
+}
+
+.tab-strip > .separator {
+  grid-column: 1/-1;
+  --PositionY: 5px !important;
+  position: relative;
+}
+
+.tab.pinned .title {
+  display: none;
+}
+
+.color-behind-tabs-on .tab-position.is-pinned .tab {
+  margin: 5px 2px 0px 2px !important;
+}

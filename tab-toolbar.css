@@ -1,0 +1,7 @@
+.button-toolbar.newtab {
+  position: sticky
+}
+
+.color-behind-tabs-on .toolbar-tabbar > .button-toolbar > button, .color-behind-tabs-on .toolbar-tabbar > .toolbar-group > .button-toolbar > button {
+  color: var(--colorImageFg, var(--colorFgIntense));
+}
