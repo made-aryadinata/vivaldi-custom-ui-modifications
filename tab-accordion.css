@@ -1,0 +1,49 @@
+.tab-position.accordion-toggle-arrow .VivaldiSvgIcon {
+  color: var(--colorHighlightBg);
+  margin-top: 7px;
+}
+
+.tab-position .tab.tab-in-accordion.tab-first-in-group {
+  border-top: 2px solid var(--colorHighlightBg) !important;
+  border-radius: calc(var(--radius)) !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  margin-top: 5px !important;
+  border-bottom: 0 !important;
+}
+
+.tab-position .tab.tab-in-accordion.tab-last-in-group {
+  border-bottom: 2px solid var(--colorHighlightBg) !important;
+  border-radius: calc(var(--radius)) !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-top: 0 !important;
+}
+
+.tab-position .tab.tab-in-accordion {
+  margin-left: -2px;
+  border-left: 2px solid var(--colorHighlightBg) !important;
+  border-right: 2px solid var(--colorHighlightBg) !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.accordion-toggle-arrow {
+  width: 238px;
+}
+
+.accordion-toggle-arrow.closed.active {
+  background-color: transparent;
+}
+
+.tab.active, #tabs-container .tab.tab-accordion, #tabs-container .tab.tab-first-in-group {
+  overflow: hidden;
+}
+
+.svg-tab-stack {
+  display: none
+}
