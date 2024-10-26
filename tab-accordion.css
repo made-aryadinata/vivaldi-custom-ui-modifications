@@ -2,6 +2,10 @@
   color: var(--colorHighlightBg);
 }
 
+.tab-position .tab.tab-in-accordion .tab-header {
+  padding-left: 4px;
+}
+
 .tab-position .tab.tab-in-accordion.tab-first-in-group {
   border-top: 2px solid var(--colorHighlightBg) !important;
   border-radius: calc(var(--radius)) !important;
@@ -19,7 +23,6 @@
 }
 
 .tab-position .tab.tab-in-accordion {
-  margin-left: -2px;
   border-left: 2px solid var(--colorHighlightBg) !important;
   border-right: 2px solid var(--colorHighlightBg) !important;
   border-top-left-radius: 0 !important;
