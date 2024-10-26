@@ -2,6 +2,10 @@
   position: sticky
 }
 
+.toolbar-large .button-toolbar.newtab {
+  width: 100%;
+}
+
 .toolbar.toolbar-tabbar > .button-toolbar > button,
 .toolbar.toolbar-tabbar > .toolbar-group > .button-toolbar > button {
   color: var(--colorImageFg, var(--colorFgIntense));
