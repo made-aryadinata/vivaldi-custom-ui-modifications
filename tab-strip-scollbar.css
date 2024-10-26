@@ -1,17 +1,17 @@
-#tabs-container .tab-strip::-webkit-scrollbar {
+#tabs-container .resize::-webkit-scrollbar {
   width: 10px;
 }
 
-#tabs-container .tab-strip::-webkit-scrollbar-track {
+#tabs-container .resize::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-#tabs-container .tab-strip::-webkit-scrollbar-thumb {
+#tabs-container .resize::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background-color: var(--colorBg);
 }
 
-#tabs-container .tab-strip::-webkit-scrollbar-button {
-  height: 10px;
+#tabs-container .resize::-webkit-scrollbar-button {
+  height: 0px;
   visibility: collapse;
 }
