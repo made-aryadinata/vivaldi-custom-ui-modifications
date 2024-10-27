@@ -4,3 +4,11 @@
   --TabHeight: 42px;
   --TabWidth: calc(var(--TabBarWidth) - 2 * var(--TabSideMargin));
 }
+
+#browser.win {
+  --TopToolbarBaseHeight: 46px;
+}
+
+#browser.mac {
+  --TopToolbarBaseHeight: 53px;
+}
