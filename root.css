@@ -12,3 +12,7 @@
 #browser.mac {
   --TopToolbarBaseHeight: 53px;
 }
+
+#browser.linux {
+  --TopToolbarBaseHeight: 46px;
+}
