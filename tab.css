@@ -10,6 +10,11 @@
   align-items: center;
 }
 
+.svg-tab-selection {
+  height: var(--TabHeight);
+  max-height: var(--TabHeight) !important;
+}
+
 .tab-position .tab {
   background-color: rgba(0, 0, 0, 0) !important;
   color: var(--colorFgFadedMore) !important;
