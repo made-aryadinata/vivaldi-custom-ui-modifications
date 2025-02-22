@@ -1,0 +1,11 @@
+div.workspace-popup.button-menu > button > span.button-toolbar-menu-indicator {
+  display: none;
+}
+
+div.workspace-popup.button-menu > button > span.button-title {
+  display: none;
+}
+
+#switch > .toolbar.toolbar-vertical .button-toolbar.workspace-popup:has(.button-title) {
+  --view-width: 37px;
+}
