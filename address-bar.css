@@ -1,0 +1,12 @@
+.SearchField, .MailSearchField-Inner, .UrlBar-AddressField {
+  background-color: var(--colorBg);
+  border: 1px solid transparent;
+}
+
+.UrlBar-AddressField .pageload:not(.progressing).progress-done {
+  opacity: 0;
+}
+
+.UrlBar-AddressField .pageload .pageload-indicator {
+  border-radius: calc(var(--radius));
+}
